@@ -17,7 +17,7 @@ function App() {
     let found = responsesData.find((r) => r.prompt === userText);
     let newMessage = "";
 
-	if(userText == "") {
+	if(userText === "") {
 		newMessage = "Enter a phrase or a statment";
 	} else
 
