@@ -5,9 +5,7 @@ export default function ResponsesSection({ data, loadingSkeleton }) {
     <section className="response-wrapper mt-2">
       <h4>Responses</h4>
       <div className="responses">
-		{
-			loadingSkeleton
-		}
+        {loadingSkeleton}
         {data.length > 0
           ? data.map((r, index) => (
               <div className="response-card p-3 mb-2 rounded-1" key={index} tabIndex="0">
@@ -29,8 +27,8 @@ export default function ResponsesSection({ data, loadingSkeleton }) {
                 </div>
               </div>
             ))
-          : "No responses yet"}
-      </div>
+          : "Enter some text to generate a response."}
+      </div> 
     </section>
   );
 }

@@ -22,7 +22,7 @@ export default function PromptInputForm({ data, onSubmit, loading, info }) {
         </label>
         <textarea name="prompt" value={promptValue} 
           onChange={e => setPromptValue(e.target.value)}
-          className="form-control mb-3 mt-1" rows={2} data-gramm="false"
+          className="form-control mb-3 mt-1" rows={4} data-gramm="false"
         />
       </div>
       <div className="col-md-12 d-flex justify-content-end">
